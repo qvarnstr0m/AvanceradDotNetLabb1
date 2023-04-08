@@ -30,7 +30,7 @@ public class BoxEnumerator : IEnumerator<Box>
 
     public void Reset()
     {
-        throw new NotImplementedException();
+        _index = -1;
     }
 
     public Box Current => _currentBox;
@@ -39,6 +39,6 @@ public class BoxEnumerator : IEnumerator<Box>
 
     public void Dispose()
     {
-        
+        // Nothing to dispose.
     }
 }
